@@ -11,6 +11,5 @@ This is where I share my learning experiences in offensive security, red teaming
 ## Latest Posts
 
 {% for post in site.blog %}
-<<<<<<< HEAD
 - [{{ post.title }}]({{ post.url }}) — <small>{{ post.date | date: "%Y-%m-%d" }}</small>
 {% endfor %}

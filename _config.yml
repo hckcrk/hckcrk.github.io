@@ -41,11 +41,11 @@ defaults:
 # You can add/remove paths anytime
 navigation:
   - title: "Home"
-    url: "/"
+    url: "https://github.com/hckcrk"
   - title: "Blog"
-    url: "/blog/"
+    url: "https://hckcrk.github.io/"
   - title: "About"
-    url: "/about/"
+    url: "https://github.com/hckcrk/hckcrk/blob/main/README.md"
 
 # Include asset folders
 include:
