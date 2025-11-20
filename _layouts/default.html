@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  
+  <!-- Hacker theme (GitHub Pages remote_theme) will apply base CSS -->
+  <!-- Additional custom CSS can be added here -->
+  <style>
+    body {
+      font-family: "Courier New", Courier, monospace;
+      background-color: #0d0d0d;
+      color: #e6e6e6;
+      margin: 0;
+      padding: 0;
+    }
+
+    a { color: #00ff9f; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      background-color: #121212;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 a {
+      color: #00ff9f;
+      text-decoration: none;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    h1, h2, h3 {
+      color: #00ff9f;
+    }
+
+    pre, code {
+      background-color: #1a1a1a;
+      color: #f1f1f1;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+
+    footer {
+      background-color: #121212;
+      color: #999;
+      text-align: center;
+      padding: 1rem;
+      border-top: 1px solid #333;
+      margin-top: 3rem;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: #333;
+      margin: 2rem 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .post-meta {
+      color: #999;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    ul, ol {
+      margin-left: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    {% if site.navigation %}
+    <nav>
+      {% for item in site.navigation %}
+        <a href="{{ item.url }}">{{ item.title }}</a>{% unless forloop.last %} | {% endunless %}
+      {% endfor %}
+    </nav>
+    {% endif %}
+  </header>
+
+  <main>
+    {% if page.date %}
+      <p class="post-meta">Published: {{ page.date | date: "%Y-%m-%d" }}</p>
+    {% endif %}
+
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>© {{ site.title }} • Built with Jekyll & GitHub Pages</p>
+  </footer>
+</body>
+</html>

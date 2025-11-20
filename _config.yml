@@ -1,0 +1,67 @@
+# Required by GitHub Pages
+# theme: jekyll-theme-minimal
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+  - jekyll-remote-theme
+
+# Core site identity
+title: "r00t_th3_h4rd_w4y"
+description: "Hacking with HckCrk"
+
+# URL and base path
+url: "https://hckcrk.github.io"
+baseurl: ""   # keep empty when the site is published at username.github.io
+
+# Markdown + formatting
+markdown: kramdown
+highlighter: rouge
+
+# Kramdown options (stable, GitHub Pages–approved)
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Permalinks for blog posts stored in /blog
+# This matches typical Jekyll structure but works fine with Obsidian
+collections:
+  blog:
+    output: true
+    permalink: /blog/:title/
+
+# Default layout rules (Jekyll will look for matching HTML layouts automatically)
+defaults:
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: post
+
+# Navigation links that appear in Jekyll-theme-minimal sidebar
+# You can add/remove paths anytime
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "About"
+    url: "/about/"
+
+# Include asset folders
+include:
+  - assets
+  - assets/badges
+
+# Exclude Obsidian system files so they don't appear on the site
+exclude:
+  - ".obsidian"
+  - "templates"
+  - "private"
+  - "README.md"
+
+# GitHub metadata (auto-injected on GitHub Pages)
+github:
+  is_project_page: true
+
+# Enable sitemap if GitHub supports it (no plugins needed)
+# GitHub auto-injects sitemap.xml since 2024
