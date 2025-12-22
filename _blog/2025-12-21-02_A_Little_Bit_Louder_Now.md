@@ -28,6 +28,7 @@ Coming back to r00t_th3_h4rd_w4y, that style of learning ended up being invaluab
 
 I am now getting ready to build my own private cloud and remote networking setup for both business and personal use. I will write more about that soon. I have been making steady progress in upskilling toward cybersecurity. I am currently working through the mid-capstone for TCM’s PJPT, the File Upload Attacks section of the HTB CWES, and reinforcing PJPT concepts through the HTB Penetration Tester Path. I have rooted all of these PJPT boxes so far:
 
-![[../assets/blog/2025-12-21-02_A_Little_Bit_Louder_Now/Progress_12-19.png]]
+![Progress screenshot](/assets/blog/2025-12-21-02_A_Little_Bit_Louder_Now/Progress_12-19.png)
+
 
 I also run my own target machine with Juice Shop and DVWA, feeding logs into a blue-team setup using Elasticsearch, Kibana, Beats, and Logstash for detection and analysis practice. I have been seeing a lot of discussion around Wazuh lately as well, so that is likely next on my list to experiment with in the coming weeks.
